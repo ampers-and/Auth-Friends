@@ -22,7 +22,10 @@ export default function FriendList(){
     return(
         <div>
             <AddFriendForm />
-            {friends.map( friend => <FriendCard key= {friend.id} friend={friend}/>) }  
+            <div className='friend-list'>
+                {friends.map( friend => 
+                    <FriendCard key= {friend.id} friend={friend}/>) } 
+            </div>
         </div> 
     )
 }
