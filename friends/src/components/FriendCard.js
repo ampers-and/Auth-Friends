@@ -17,9 +17,9 @@ export default function FriendCard(props){
 
     return(
         <div className='friend-card'>
-            <h1>Name: {props.friend.name}</h1>
-            <h2>Email: {props.friend.email}</h2>
-            <h3>Age: {props.friend.age}</h3>
+            <h2>{props.friend.name}</h2>
+            <h3>{props.friend.email}</h3>
+            <h4>Age: {props.friend.age}</h4>
             <button onClick={handleRemove}>Remove</button>
         </div>
     )
